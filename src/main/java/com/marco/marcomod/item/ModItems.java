@@ -13,7 +13,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item DARKNESS_CAKE = registerItems("darkness_cake",new Item(new Item.Settings()));
+    public static final Item DARKNESS_CAKE = registerItems("darkness_cake",new Item(new Item.Settings().food(ModFoodComponents.DARKNESS_CAKE)));
 
     private static Item registerItems(String id, Item item){
         return Registry.register(Registries.ITEM,Identifier.of(MarcoMod.MOD_ID,id),item);
