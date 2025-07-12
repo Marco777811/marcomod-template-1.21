@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "enabled=false,full=false": {
+      "model": "marcomod:block/magnet_off"
+    },
+    "enabled=true,full=false": {
+      "model": "marcomod:block/magnet_on"
+    },
+    "enabled=true,full=true": {
+      "model": "marcomod:block/magnet_full_on"
+    },
+    "enabled=false,full=true":{
+      "model": "marcomod:block/magnet_full_off"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "marcomod",
+	"version": "${version}",
+	"name": "Marco Mod",
+	"description": "杂七杂八的东西",
+	"authors": [
+		"Marco777"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/marcomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.marco.marcomod.MarcoMod"
+		],
+		"fabric-datagen": [
+			"com.marco.marcomod.MarcoModDataGenerator"
+		],
+		"client":[
+			"com.marco.marcomod.MarcoModClient"
+		]
+	},
+	"mixins": [
+		"marcomod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
